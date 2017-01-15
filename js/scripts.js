@@ -9,7 +9,7 @@ $('.carousel').jCarouselLite({
     mousewheel: true,
     btnNext: '.btn-slide .next',
     btnPrev: '.btn-slide .prev',
-    btnGo: ['.btn-slide .1', '.btn-slide .2', '.btn-slide .3', '.btn-slide .4', '.btn-slide .5']
+    btnGo: ['.btn-slide .1', '.btn-slide .2', '.btn-slide .3', '.btn-slide .4', '.btn-slide .5', '.btn-slide .6']
 });
 
 $(function () {
@@ -20,12 +20,12 @@ $(function () {
   }, 500);
   var timeOut;
 
-  $('#huddleup, #thunderbird, #chess, #resume').mouseenter(function (e) {
+  $('#soundbear, #rumble, #bakpak, #myksr, #resume').mouseenter(function (e) {
     window.clearTimeout(timeOut);
     $('.' + e.currentTarget.id).trigger('click');
   });
 
-  $('#huddleup, #thunderbird, #chess, #resume').mouseout(function (e) {
+  $('#soundbear, #rumble, #bakpak, #myksr, #resume').mouseout(function (e) {
     timeOut = window.setTimeout(function () {
       $('.me3').trigger('click');
     }, 500);
